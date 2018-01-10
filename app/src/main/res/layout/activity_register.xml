@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.magarex.easyly.RegisterActivity">
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/spCountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp">
+
+    </com.hbb20.CountryCodePicker>
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/txtPhone"
+        android:hint="Phone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

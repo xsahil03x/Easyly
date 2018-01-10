@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.magarex.easyly.ProfileActivity">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="37dp"
+        android:gravity="center"
+        android:hint="NAME"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:gravity="center"
+        android:layout_below="@+id/txtUsername"
+        android:inputType="textEmailAddress"
+        android:hint="EMAIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtAddress"
+        android:gravity="center"
+        android:layout_below="@+id/txtEmail"
+        android:hint="ADDRESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:gravity="center"
+        android:layout_below="@+id/txtAddress"
+        android:hint="PHONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spGender"
+        android:layout_below="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/gender"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_below="@+id/spGender"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:layout_below="@id/btnSave"
+        android:text="Fetch Data From Google"
+        app:isDarkTheme = 'true'
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+</RelativeLayout>
